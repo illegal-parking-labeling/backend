@@ -16,6 +16,18 @@ class LabelCreate(BaseModel):
     matched_ai: bool = False
 
 
+class LabelUpdate(BaseModel):
+    prediction_id: int | None = None
+    x1: float | None = None
+    y1: float | None = None
+    x2: float | None = None
+    y2: float | None = None
+    vehicle_type: VehicleType | None = None
+    parking_status: ParkingStatus | None = None
+    lane_type: LaneType | None = None
+    matched_ai: bool | None = None
+
+
 class LabelOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
