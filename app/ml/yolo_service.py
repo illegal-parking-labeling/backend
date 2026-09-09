@@ -5,11 +5,10 @@ from ultralytics import YOLO
 from app.core.config import settings
 
 # COCO 클래스 중 이 프로젝트에서 다루는 차종만 남기고 매핑한다.
-# bus는 별도 체크박스가 없으므로 우선 트럭(대형차) 카테고리로 합친다.
 VEHICLE_CLASS_MAP = {
     "car": "car",
     "truck": "truck",
-    "bus": "truck",
+    "bus": "bus",
     "motorcycle": "motorcycle",
 }
 

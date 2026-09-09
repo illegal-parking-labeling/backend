@@ -10,12 +10,14 @@ class ImageStatus(str, enum.Enum):
 class VehicleType(str, enum.Enum):
     CAR = "car"
     TRUCK = "truck"
+    BUS = "bus"
     MOTORCYCLE = "motorcycle"
 
 
 class ParkingStatus(str, enum.Enum):
     NORMAL = "normal"
     ILLEGAL = "illegal"
+    MOVING = "moving"
 
 
 class LaneType(str, enum.Enum):
